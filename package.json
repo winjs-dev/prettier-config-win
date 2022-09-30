@@ -1,6 +1,6 @@
 {
   "name": "@winner-fed/prettier-config-win",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "团队内部 prettier 配置",
   "main": "index.json",
   "files": [
@@ -13,6 +13,12 @@
   ],
   "author": "WhaleFE",
   "license": "MIT",
+  "scripts": {
+    "release": "bumpp --commit --push --tag && npm publish"
+  },
+  "devDependencies": {
+    "bumpp": "^7.1.1"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
