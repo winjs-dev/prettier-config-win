@@ -1,0 +1,20 @@
+{
+  "name": "@winner-fed/prettier-config-win",
+  "version": "1.0.0",
+  "description": "团队内部 prettier 配置",
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "keywords": [
+    "perttier",
+    "winner",
+    "winner-fed"
+  ],
+  "author": "WhaleFE",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
