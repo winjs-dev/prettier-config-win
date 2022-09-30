@@ -12,12 +12,12 @@ yarn add @winner-fed/prettier-config-win --dev
 
 ```json
 {
-  "prettier": "@winner-fed/prettier-config"
+  "prettier": "@winner-fed/prettier-config-win"
 }
 ```
 
 ### In `.prettierrc`
 
 ```json
-"@winner-fed/prettier-config"
+"@winner-fed/prettier-config-win"
 ```
