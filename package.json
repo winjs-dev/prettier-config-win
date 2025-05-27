@@ -1,10 +1,24 @@
 {
   "name": "@winner-fed/prettier-config-win",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "团队内部 prettier 配置",
-  "main": "index.json",
+  "type": "module",
+  "main": "index.cjs",
+  "module": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs",
+      "default": "./index.json"
+    },
+    "./index.json": "./index.json",
+    "./package.json": "./package.json"
+  },
   "files": [
-    "index.json"
+    "index.js",
+    "index.cjs",
+    "index.json",
+    "prettier.config.js"
   ],
   "keywords": [
     "perttier",
@@ -14,6 +28,7 @@
   "author": "WhaleFE",
   "license": "MIT",
   "scripts": {
+    "test": "node test-compatibility.js",
     "release": "bumpp --commit --push --tag && npm publish"
   },
   "devDependencies": {
